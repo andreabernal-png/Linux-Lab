@@ -1,15 +1,79 @@
-/Roots: Es el directorio principal (raiz) del sistema, aqui comienza toda la estructura, todos los demas directorios cuelgan de aqui.
-/bin: Contiene los binarios (programas ejecutables) esenciales del sistema pueden usar todos los usuarios: ls, cp, mv y bash.
-/sbin: Contiene binarios de administracion del sistema que normalmente requieren privilegios de usuario root para ser ejecutados.
-/etc: Aqui se almacena todos los archivos de configuracion del sistema operativo y sus servicios.
-/home: Directorio que coontiene carpetas personales de los usuarios.
-/var: Contiene datos variables que cambian constantemente durante la operacion, como registro de eventos (logs), colas de impresion y base de datos.
-/usr: Contiene la mayoria de los programas y utilidades de los usuarios; incluye sus propios subdrectorios /bin y /lib
-/tmp: Espacio para archivos temporales, este se limpia cada que se reinicia el sistema.
-/opt: Destinado a la instalacion de paquetes de sofeware opcional de terceros que no siguen el estandar de linux.
-/boot: Guarda los archivos necesarios para que la computadora encienda, incluyendo el Kernel de linux y configuaracion de arranque GRUB.
-/dev: Contiene archivos especiales que representan los dispositivos fisicos(esto bajo la filosofia de todo es un archivo).
-/proc: Sistema de archivo virtual que no ocuoa espacio en disco, expone la informacion en tiempo real sobre los procesos acticos y el estado del kernel.
-/sys: Proporciona una interfaz para ver y cambiar la informacion de los dispositivos y controladores directamente en el Kernel.
-/mnt: Se utiliza como un punto de mpontaje temporal para que el administrador conecte manualmente sistemas de archivos o particiones externas.
-
+# Mapa del Sistema de Archivos Linux
+## Directorios de Nivel Superior
+### / ( Root )
+- * Proposito :* Directorio raiz del sistema
+- * Contenido :* Todos los demas directorios
+- * Permisos :* Solo root puede escribir directamente
+### / home
+- * Proposito :* Directorios personales de usuarios
+- * Estructura :* ‘/ home / usuario1 ‘, ‘/ home / usuario2 ‘
+- * Permisos :* Cada usuario solo accede a su directorio
+- * Ejemplo :* ‘/ home / erwin / Documentos ‘
+### /etc
+- * Proposito :* Archivos de configuracion del sistema
+- * Archivos importantes :*
+- ‘/ etc/ passwd ‘ - Informacion de usuarios
+- ‘/ etc/group ‘ - Informacion de grupos
+- ‘/ etc/hosts ‘ - Resolucion de nombres local
+- ‘/ etc/ ssh/ sshd_config ‘ - Configuracion SSH
+- * Nota :* Requiere root para modificar
+### /var
+- * Proposito :* Datos variables durante operacion
+- * Subdirectorios :*
+- ‘/ var/ log/‘ - Logs del sistema
+- ‘/ var/ www/‘ - Sitios web
+- ‘/ var/ cache /‘ - Cache de aplicaciones
+- ‘/ var/ spool /‘ - Colas de impresion
+- * Uso :* Crece con el tiempo
+### /bin
+- * Proposito :* Binarios esenciales del sistema
+- * Contenido :* ‘ls ‘, ‘cp ‘, ‘mv ‘, ‘cat ‘, ‘bash ‘
+- * Disponible :* Para todos los usuarios
+- * Nota :* En sistemas modernos , symlink a ‘/ usr/bin ‘
+### /usr
+- * Proposito :* Programas y datos de usuario
+- * Estructura :*
+- ‘/ usr/ bin/‘ - Binarios de usuario
+- ‘/ usr/ lib/‘ - Librerias compartidas
+- ‘/ usr/ local /‘ - Software instalado localmente
+- ‘/ usr/ share /‘ - Datos compartidos
+### /opt
+- * Proposito :* Software opcional de terceros
+- * Ejemplo :* ‘/ opt/ google / chrome ‘
+- * Uso :* Software que no sigue estandar FHS
+### /tmp
+- * Proposito :* Archivos temporales
+- * Caracteristicas :* Se limpia en cada reinicio
+- * Permisos :* Cualquier usuario puede escribir
+### / boot
+- * Proposito :* Archivos de arranque
+- * Contenido :* Kernel de Linux , GRUB
+- * Importante :* NO modificar sin conocimiento
+### /dev
+- * Proposito :* Archivos de dispositivos
+- * Concepto :* " Todo es un archivo " en Linux
+- * Ejemplos :*
+- ‘/ dev/sda ‘ - Primer disco duro
+- ‘/ dev/null ‘ - Agujero negro ( descarta todo )
+- ‘/ dev/ random ‘ - Generador aleatorio
+### / proc
+- * Proposito :* Sistema de archivos virtual
+- * Contenido :* Informacion de procesos y kernel
+- * Ejemplos :*
+- ‘/ proc / cpuinfo ‘ - Info del CPU
+- ‘/ proc / meminfo ‘ - Info de memoria
+- ‘/ proc /1234/ ‘ - Info del proceso 1234
+### /sys
+- * Proposito :* Interfaz moderna al kernel
+- * Contenido :* Informacion de hardware y drivers
+## Comandos Utiles
+‘‘‘bash
+# Ver estructura con tree
+tree -L 1 /
+# Tamano de directorios
+du -sh /*
+# Espacio en disco
+df -h
+# Explorar directorio
+ls -lah /etc
+‘‘‘
