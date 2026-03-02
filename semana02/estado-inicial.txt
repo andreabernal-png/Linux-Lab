@@ -1,0 +1,56 @@
+total 204K
+-rw-rw-r-- 1 andrea andrea   62 mar  2 00:12  app_1 . log 
+-rw-rw-r-- 1 andrea andrea   62 mar  2 00:12  app_2 . log 
+-rw-rw-r-- 1 andrea andrea   62 mar  2 00:12  app_3 . log 
+-rw-rw-r-- 1 andrea andrea   33 mar  2 00:12  config_1 . conf 
+-rw-rw-r-- 1 andrea andrea   33 mar  2 00:12  config_2 . conf 
+-rw-rw-r-- 1 andrea andrea   33 mar  2 00:12  config_3 . conf 
+-rw-rw-r-- 1 andrea andrea   33 mar  2 00:12  config_4 . conf 
+-rw-rw-r-- 1 andrea andrea   24 mar  2 00:12  documento_1 . txt 
+-rw-rw-r-- 1 andrea andrea   24 mar  2 00:12  documento_2 . txt 
+-rw-rw-r-- 1 andrea andrea   24 mar  2 00:12  documento_3 . txt 
+-rw-rw-r-- 1 andrea andrea   24 mar  2 00:12  documento_4 . txt 
+-rw-rw-r-- 1 andrea andrea   24 mar  2 00:12  documento_5 . txt 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  foto_1 . jpg 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  foto_2 . jpg 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  foto_3 . jpg 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  foto_4 . jpg 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  foto_5 . jpg 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  notas_1 . md 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  notas_2 . md 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  notas_3 . md 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  notas_4 . md 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  notas_5 . md 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  reporte_1 . doc 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  reporte_2 . doc 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  reporte_3 . doc 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  reporte_4 . doc 
+-rw-rw-r-- 1 andrea andrea   12 mar  2 00:12  reporte_5 . doc 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  screenshot_1 . png 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  screenshot_2 . png 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  screenshot_3 . png 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  screenshot_4 . png 
+-rw-rw-r-- 1 andrea andrea   16 mar  2 00:12  screenshot_5 . png 
+-rw-rw-r-- 1 andrea andrea   31 mar  2 00:12  script_1 . sh 
+-rw-rw-r-- 1 andrea andrea   31 mar  2 00:12  script_2 . sh 
+-rw-rw-r-- 1 andrea andrea   31 mar  2 00:12  script_3 . sh 
+-rw-rw-r-- 1 andrea andrea   31 mar  2 00:12  script_4 . sh 
+-rw-rw-r-- 1 andrea andrea   31 mar  2 00:12  script_5 . sh 
+-rw-rw-r-- 1 andrea andrea   22 mar  2 00:12  settings_1 . json 
+-rw-rw-r-- 1 andrea andrea   22 mar  2 00:12  settings_2 . json 
+-rw-rw-r-- 1 andrea andrea   22 mar  2 00:12  settings_3 . json 
+-rw-rw-r-- 1 andrea andrea   22 mar  2 00:12  settings_4 . json 
+-rw-rw-r-- 1 andrea andrea   57 mar  2 00:12  sistema_1 . log 
+-rw-rw-r-- 1 andrea andrea   57 mar  2 00:12  sistema_2 . log 
+-rw-rw-r-- 1 andrea andrea   57 mar  2 00:12  sistema_3 . log 
+-rw-rw-r-- 1 andrea andrea   57 mar  2 00:12  sistema_4 . log 
+-rw-rw-r-- 1 andrea andrea   35 mar  2 00:12  utilidad_1 . py 
+-rw-rw-r-- 1 andrea andrea   35 mar  2 00:12  utilidad_2 . py 
+-rw-rw-r-- 1 andrea andrea   35 mar  2 00:12  utilidad_3 . py 
+-rw-rw-r-- 1 andrea andrea   35 mar  2 00:12  utilidad_4 . py 
+-rw-rw-r-- 1 andrea andrea   35 mar  2 00:12  utilidad_5 . py 
+-rw-rw-r-- 1 andrea andrea    0 mar  2 00:02 analisis-permisos.md
+-rw-rw-r-- 1 andrea andrea    0 mar  2 00:13 estado-inicial.txt
+-rwxrwxr-x 1 andrea andrea 1,5K mar  2 00:10 generate-messy-files.sh
+-rw-rw-r-- 1 andrea andrea    0 mar  2 00:01 organize-files.sh
+-rw-rw-r-- 1 andrea andrea    0 mar  2 00:01 README.md
