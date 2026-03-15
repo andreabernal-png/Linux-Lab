@@ -48,7 +48,7 @@ done
 # Logs (7 archivos )
 for i in {1..4}; do
 date >> " sistema_$i . log "
-echo " ERROR : Error de prueba $i " >> " sistema_$i . log "
+echo " ERROR : Error de procesamiento" >> " sistema_$i . log "
 done
 
 for i in {1..3}; do
