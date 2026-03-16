@@ -1,0 +1,4 @@
+organized/
+└── {documents,
+
+2 directories, 0 files
